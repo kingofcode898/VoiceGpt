@@ -105,10 +105,13 @@
       </div>
       <div class="col-4">
          <h1 style="text-align: center;">This is audio AUdioGpt</h1>
-            <form method="post">
-                <input type="text"></input> 
-                <button id="send">Send</button>
-            </form>
+         <input type="file" id="audioFileInput" accept="audio/*">
+          <button onclick="uploadAudio()">Upload</button>
+          <div class="container mt-5">
+            <h3>Ask a question</h3>
+            <input class="mt-1" id="question"style="width: 300px; height: 200px;" type="text">
+            <button onclick="uploadText()">Enter</button>
+          </div>
         </div>
     </div>
 </div>
